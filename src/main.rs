@@ -26,7 +26,9 @@ impl Render for HelloWorld {
             .child(
                 div()
                     .flex()
-                    .gap_2(),
+                    .gap_2()
+                    .gap_10()
+                    ,
             )
     }
 }
