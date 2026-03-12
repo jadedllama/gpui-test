@@ -5,6 +5,7 @@ use gpui::{
  
 struct HelloWorld {
     text: SharedString,
+    name: SharedString
 }
  
 impl Render for HelloWorld {
@@ -23,6 +24,7 @@ impl Render for HelloWorld {
             .text_xl()
             .text_color(rgb(0xffffff))
             .child(format!("Hello, {}!", &self.text))
+            .child(format!("Hello, {}!", &self.name))
             .child(
                 div()
                     .flex()
@@ -44,6 +46,7 @@ fn main() {
             |_, cx| {
                 cx.new(|_| HelloWorld {
                     text: "World".into(),
+                    name: "Rocks".into()
                 })
             },
         )
