@@ -30,6 +30,7 @@ impl Render for HelloWorld {
                     .flex()
                     .gap_2()
                     .gap_10()
+                    .border_1()
                     ,
             )
     }
