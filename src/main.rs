@@ -31,6 +31,7 @@ impl Render for HelloWorld {
                     .gap_2()
                     .gap_10()
                     .border_1()
+                    .border_color(rgb(0xffffff))
                     ,
             )
     }
