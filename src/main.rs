@@ -32,6 +32,7 @@ impl Render for HelloWorld {
                     .gap_10()
                     .border_1()
                     .border_color(rgb(0xffffff))
+                    .child(format!("Hello, {}!", &self.name))
                     ,
             )
     }
